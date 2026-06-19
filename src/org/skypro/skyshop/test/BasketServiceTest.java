@@ -1,4 +1,4 @@
-package org.skypro.skyshop.service;
+package org.skypro.skyshop.test;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -8,7 +8,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.skypro.skyshop.exception.NoSuchProductException;
 import org.skypro.skyshop.model.basket.ProductBasket;
 import org.skypro.skyshop.model.product.Product;
-import org.skypro.skyshop.model.product.SimpleProduct;
 
 import java.util.Collections;
 import java.util.Optional;
@@ -17,6 +16,9 @@ import java.util.UUID;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 import org.skypro.skyshop.model.basket.UserBasket;
+import org.skypro.skyshop.service.BasketService;
+import org.skypro.skyshop.service.StorageService;
+
 @ExtendWith(MockitoExtension.class)
 class BasketServiceTest {
 

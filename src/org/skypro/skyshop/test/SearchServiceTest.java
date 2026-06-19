@@ -1,4 +1,4 @@
-package org.skypro.skyshop.service;
+package org.skypro.skyshop.test;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -6,6 +6,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.skypro.skyshop.model.search.Searchable;
+import org.skypro.skyshop.service.SearchService;
+import org.skypro.skyshop.service.StorageService;
 
 import java.util.Collections;
 import java.util.List;
