@@ -1,4 +1,5 @@
-package org.skypro.skyshop.test;
+package test.java.org.skypro.skyshop.service;
+
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -33,14 +34,14 @@ class SearchServiceTest {
 
     @Test
     void noMatch_returnsEmpty() {
-        Searchable s = new TestSearchable("banana");
+        Searchable s = new org.skypro.skyshop.test.SearchServiceTest.TestSearchable("banana");
         when(storageService.getAllSearchables()).thenReturn(List.of(s));
         assertEquals(0, searchService.search("apple").size());
     }
 
     @Test
     void match_returnsResult() {
-        Searchable s = new TestSearchable("apple");
+        Searchable s = new org.skypro.skyshop.test.SearchServiceTest.TestSearchable("apple");
         when(storageService.getAllSearchables()).thenReturn(List.of(s));
         assertEquals(1, searchService.search("apple").size());
     }

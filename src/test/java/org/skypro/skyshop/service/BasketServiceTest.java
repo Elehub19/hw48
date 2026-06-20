@@ -1,4 +1,4 @@
-package org.skypro.skyshop.test;
+package test.java.org.skypro.skyshop.service;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
